@@ -3,6 +3,9 @@ from gb_aboutme import views
 from django.contrib import admin
 
 urlpatterns = [
+    # Стартовая страница
+    path('', views.index, name='index'),
+
     # Маршруты для админ панели
     path('admin/', admin.site.urls),
 

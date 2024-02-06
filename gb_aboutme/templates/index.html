@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функционал CRUD в Django</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать в CRUD функционал Django</h1>
+        <p>Ниже представлены операции CRUD, которые вы можете выполнить:</p>
+        <div class="crud-method">
+            <h2>Создание</h2>
+            <p>Для создания нового клиента, продукта или заказа выполните POST запрос по следующим эндпоинтам:</p>
+            <ul>
+                <li>/create_client/</li>
+                <li>/create_product/</li>
+                <li>/create_order/</li>
+            </ul>
+        </div>
+        <div class="crud-method">
+            <h2>Чтение</h2>
+            <p>Для получения информации о клиенте, продукте или заказе выполните GET запрос по следующим эндпоинтам:</p>
+            <ul>
+                <li>/client/{client_id}/</li>
+                <li>/product/{product_id}/</li>
+                <li>/order/{order_id}/</li>
+            </ul>
+        </div>
+        <div class="crud-method">
+            <h2>Обновление</h2>
+            <p>Для обновления данных клиента, продукта или заказа выполните POST запрос с обновленными данными по следующим эндпоинтам:</p>
+            <ul>
+                <li>/update_client/{client_id}/</li>
+                <li>/update_product/{product_id}/</li>
+                <li>/update_order/{order_id}/</li>
+            </ul>
+        </div>
+        <div class="crud-method">
+            <h2>Удаление</h2>
+            <p>Для удаления клиента, продукта или заказа выполните POST запрос по следующим эндпоинтам:</p>
+            <ul>
+                <li>/delete_client/{client_id}/</li>
+                <li>/delete_product/{product_id}/</li>
+                <li>/delete_order/{order_id}/</li>
+            </ul>
+        </div>
+        <div class="crud-method">
+            <h2>Список заказанных товаров</h2>
+            <p>Для получения списка товаров, заказанных за определенный период, выполните GET запрос с указанием числа дней по следующему эндпоинту:</p>
+            <ul>
+                <li>/ordered_products/{days}/</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

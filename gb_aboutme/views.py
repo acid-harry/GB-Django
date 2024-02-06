@@ -8,6 +8,10 @@ from datetime import timedelta
 # Получаем объект логгера для этого модуля
 logger = logging.getLogger(__name__)
 
+# Стартовая страница
+def index(request):
+    return render(request, 'index.html')
+
 # Create
 def create_client(request):
     if request.method == 'POST':
