@@ -1,0 +1,122 @@
+Watching for file changes with StatReloader
+/mnt/d/GeekBrains/GB_Django/gb_project/gb_project/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 538
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2348
+/mnt/d/GeekBrains/GB_Django/gb_project/gb_aboutme/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 807
+"GET /about/ HTTP/1.1" 200 685
+"GET / HTTP/1.1" 200 807
+Watching for file changes with StatReloader
+Посетили главную страницу
+"GET / HTTP/1.1" 200 807
+Посетили страницу "О себе"
+"GET /about/ HTTP/1.1" 200 685
+Watching for file changes with StatReloader
+/mnt/d/GeekBrains/GB_Django/gb_project/gb_project/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /about/
+"GET /about/ HTTP/1.1" 404 3793
+Not Found: /
+"GET / HTTP/1.1" 404 3757
+"GET /create_client HTTP/1.1" 301 0
+"GET /create_client/ HTTP/1.1" 200 43
+/mnt/d/GeekBrains/GB_Django/gb_project/gb_aboutme/views.py changed, reloading.
+Watching for file changes with StatReloader
+/mnt/d/GeekBrains/GB_Django/gb_project/gb_project/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /admin
+"GET /admin HTTP/1.1" 404 3949
+Not Found: /admins
+"GET /admins HTTP/1.1" 404 3952
+Not Found: /admin
+"GET /admin HTTP/1.1" 404 3949
+Watching for file changes with StatReloader
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/base.css HTTP/1.1" 200 21544
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7078
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /admin/gb_aboutme/client/ HTTP/1.1" 200 8063
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/ HTTP/1.1" 200 7078
+"GET /admin/gb_aboutme/order/ HTTP/1.1" 200 8056
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/gb_aboutme/order/add/ HTTP/1.1" 200 12872
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"GET /admin/gb_aboutme/order/ HTTP/1.1" 200 8056
+"GET /admin/ HTTP/1.1" 200 7078
+Not Found: /ordered_products.html
+"GET /ordered_products.html HTTP/1.1" 404 4103
+Watching for file changes with StatReloader
+Not Found: /ordered_products.html
+"GET /ordered_products.html HTTP/1.1" 404 4103
+Not Found: /ordered_products.html/7
+"GET /ordered_products.html/7 HTTP/1.1" 404 4109
+Not Found: /ordered_products.html/7/
+"GET /ordered_products.html/7/ HTTP/1.1" 404 4112
+Internal Server Error: /ordered_products/7/
+Traceback (most recent call last):
+  File "/mnt/d/GeekBrains/GB_Django/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/d/GeekBrains/GB_Django/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/d/GeekBrains/GB_Django/gb_project/gb_aboutme/views.py", line 98, in ordered_products
+    orders = Order.objects.filter(date__range=(start_date, end_date))
+  File "/mnt/d/GeekBrains/GB_Django/venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/mnt/d/GeekBrains/GB_Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/mnt/d/GeekBrains/GB_Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/mnt/d/GeekBrains/GB_Django/venv/lib/python3.10/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/mnt/d/GeekBrains/GB_Django/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/mnt/d/GeekBrains/GB_Django/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/mnt/d/GeekBrains/GB_Django/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "/mnt/d/GeekBrains/GB_Django/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/mnt/d/GeekBrains/GB_Django/venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'date' into field. Choices are: client, client_id, id, order_date, products, total_amount
+"GET /ordered_products/7/ HTTP/1.1" 500 108081
+Watching for file changes with StatReloader
+"GET /ordered_products/7/ HTTP/1.1" 200 470
+"GET /ordered_products/8/ HTTP/1.1" 200 470
